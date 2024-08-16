@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+</head>
+<body>
+  <h1>JOB APPLICATION</h1>
+  <form action="" method="" >
+    <fieldset>
+      <legend>Personl Details</legend>
+
+      <label for="First Name">Name :</label><br><br>
+      <input type="text" placeholder="First Name" id="First Name" required autofocus>
+      <input type="text" placeholder="Middle Name">
+      <input type="text" placeholder="Last name" required><br><br>
+
+      <label for="mobile no">Contact :</label>
+      <input type="tel" id="mobile no" pattern="[0-9]{10}" required><br><br>
+      
+      <label for="e-mail">e-mail :</label>
+      <input type="email" id="e-mail" required><br><br>
+
+      <label for="DOB">DOB :</label>
+      <input type="date" id="DOB" min="1990-01-01" max="2006-01-01" required><br><br>
+
+      <label for="Gender">Gender :</label>
+      <input type="radio" name="Gender" value="male" checked>male
+      <input type="radio" name="Gender" value="female">female
+      <input type="radio" name="Gender" value="other">others
+      <br><br>
+
+    </fieldset><br><br>
+
+    <fieldset>
+      <legend>Educational Details</legend>
+
+      <label for="Highest Degree" >Highest Degree :</label>
+      <select name="" id="Highest Degree" required>
+        <option value="">Highest Degree</option>
+        <option value="">B.E</option>
+        <option value="">B.Tech</option>
+        <option value="">M.E</option>
+        <option value="">M.Tech</option>
+      </select><br><br>
+
+      <label for="CGPA">CGPA :</label>
+      <input type="number" id="CGPA" min="0" max="10" required><br><br>
+
+      <label for="">Skills :</label>
+      <input type="checkbox" name="Skills" value="Frontend">Frontend
+      <input type="checkbox" name="Skills" value="Backend">Backend
+      <input type="checkbox" name="Skills" value="Full Stacks">Full Stacks
+      <br><br>
+
+    </fieldset><br><br>
+
+    <fieldset>
+      <legend>Address</legend>
+
+      <label for="address">Address</label>
+      <textarea name="" id="address" required></textarea><br><br>
+
+      <label for="city">City</label>
+      <input type="text" id="city" required><br><br>
+
+      <label for="states">State</label>
+      <input list="states" required>
+      <datalist id="states">
+          <option value="Andhra Pradesh">
+          <option value="Arunachal Pradesh">
+          <option value="Assam">
+          <option value="Bihar">
+          <option value="Chhattisgarh">
+          <option value="Goa">
+          <option value="Gujarat">
+          <option value="Haryana">
+          <option value="Himachal Pradesh">
+          <option value="Jharkhand">
+          <option value="Karnataka">
+          <option value="Kerala">
+          <option value="Madhya Pradesh">
+          <option value="Maharashtra">
+          <option value="Manipur">
+          <option value="Meghalaya">
+          <option value="Mizoram">
+          <option value="Nagaland">
+          <option value="Odisha">
+          <option value="Punjab">
+          <option value="Rajasthan">
+          <option value="Sikkim">
+          <option value="Tamil Nadu">
+          <option value="Telangana">
+          <option value="Tripura">
+          <option value="Uttar Pradesh">
+          <option value="Uttarakhand">
+          <option value="West Bengal">
+          <option value="Andaman and Nicobar Islands">
+          <option value="Chandigarh">
+          <option value="Dadra and Nagar Haveli and Daman and Diu">
+          <option value="Delhi">
+          <option value="Lakshadweep">
+          <option value="Puducherry">
+      </datalist><br><br>
+
+      <label for="pincode">Pincode</label>
+      <input type="tel" name="" id="pincode" pattern="[0-9]{6}" required><br><br>
+    </fieldset><br><br>
+
+    <fieldset>
+      <label for="cv">CV</label>
+      <input type="file" required><br><br>
+
+      <label for="car">Select Car</label>
+      <select name="car" id="car" required>
+        <optgroup label="Honda">
+          <option value="H1">H1</option>
+          <option value="H2">H2</option>
+          <option value="H3">H3</option>
+        </optgroup>
+        <optgroup label="TATA">
+          <option value="T1">T1</option>
+          <option value="T2">T2</option>
+          <option value="T3">T3</option>
+        </optgroup>
+        <optgroup label="Ford">
+          <option value="F1">F1</option>
+          <option value="F2">F2</option>
+          <option value="F3">F3</option>
+        </optgroup>
+      </select><br><br>
+
+      <label for="tshirt">Tshirt colour</label>
+        <input type="color" name="" id="tshirt" >
+    </fieldset><br><br>
+
+    <input type="submit">
+  </form>
+</body>
+</html>
